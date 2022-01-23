@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  /* --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40; */
+  --hover-effect: #16689e;
+  --hover-effect-lighter: #17a2b8;
+}
+
+h1 {
+  font-size: 20rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* diffrent fonts */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.top-bar {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #343a40;
+  color: #7d7d7d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-bar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.top-bar > ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.currency {
+  background-color: inherit;
+  border: none;
+  color: #7d7d7d;
+  font-size: inherit;
+}
+
+.currency:hover {
+  color: #007bff;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #7d7d7d;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #16689e;
+}
+
+.shop-cart {
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 1.5;
+  position: relative;
+  min-width: 125px;
+}
+
+.shop-cart:hover > * {
+  color: var(--hover-effect);
+}
+
+.shop-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.dropdown-menu > a {
+  display: block;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.dropdown-menu > a:hover {
+  color: var(--hover-effect);
+  transition: color 0.2s;
+}
+
+.shop-cart:hover > .dropdown-menu {
+  display: block;
+  background-color: #17a2b8;
+  border-radius: 0 0 10px 10px;
+  z-index: 100;
+}
+
+/* main-menu css */
+.main-menu {
+  position: relative;
+  background-color: #f0f0f0;
+  min-height: 900px;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 15px;
+  top: 15px;
+  left: 7%;
+}
+
+.logo h4 > span {
+  font-weight: 400;
+}
+
+.logo > a:link,
+.logo > a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo > a:hover {
+  color: var(--hover-effect-lighter);
+  transition: color 0.2s;
+}
+.abbr-text {
+  text-decoration: none;
+  color: #4e5254;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 0 3%;
+}
+
+.abbt-text > h1 {
+  text-transform: uppercase;
+}
+
+.left-menu {
+  width: 50%;
+  min-height: 100px;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.left-menu > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 11%;
+}
+
+.nav-header {
+  position: absolute;
+  margin-left: 50%;
+  display: flex;
+}
+
+.nav-header > div {
+  padding: 30px 15px 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-header h5 {
+  color: #343a40;
+}
+
+.nav-header span {
+  color: #343a40;
+}
+
+.nav-header > div:hover > * {
+  color: var(--hover-effect-lighter);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.input-search {
+  position: absolute;
+  right: 7%;
+  top: 30px;
+}
+
+.dropdown-menu-category {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-menu-category > div {
+  margin-left: 10px;
+}
+.dropdown-menu-category a {
+  text-decoration: none;
+}
+
+.nav-header > div:hover > .dropdown-menu-category {
+  display: flex;
+  z-index: 50;
+}
+
+.title-subcategory > h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 5px 15px 10px 0;
+}
+
+.name-category > h5 {
+  font-weight: 400;
+  padding: 5px 5px 5px 5px;
+}
+
+.name-category:hover > h5 {
+  color: var(--hover-effect-lighter);
+}

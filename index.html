@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shop layout</title>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Roboto:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <ul>
+          <li class="nav-item">
+            <span>Currency:</span>
+            <select class="currency">
+              <option value="CHF">CHF</option>
+              <option value="EUR" selected>EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="PLN">PLN</option>
+              <option value="USD">USD</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sign in</a>
+          </li>
+          <li class="shop-cart">
+            <span><i class="fas fa-shopping-cart"></i></span>
+            <a href="#" class="shop-link">empty</a>
+            <span><i class="fas fa-caret-down"></i></span>
+            <div class="dropdown-menu">
+              <a href="">First action</a>
+              <a href="">Second action</a>
+              <a href="">Third action</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main-menu">
+        <div class="logo">
+          <a href="">
+            <h4>avenue <span>fashion</span></h4>
+          </a>
+        </div>
+        <div class="nav-header">
+          <div class="category-mens">
+            <h5>MENS</h5>
+            <span><i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-menu-category">
+              <div>
+                <div class="title-subcategory"><h5>casuals</h5></div>
+                <a href="">
+                  <div class="name-category"><h5>Jackets</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Hoodies & Sweatshirts</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Polo Shirts</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Sportswear</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Trousers & Chinos</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>T-shirt</h5></div>
+                </a>
+              </div>
+              <div>
+                <div class="title-subcategory"><h5>formal</h5></div>
+                <a href="">
+                  <div class="name-category"><h5>Jackets</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Shirt</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Suits</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Trousers</h5></div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="category-womens">
+            <h5>WOMAN</h5>
+            <span><i class="fas fa-chevron-down"></i></span>
+            <div class="dropdown-menu-category">
+              <div>
+                <div class="title-subcategory"><h5>casuals</h5></div>
+                <a href="">
+                  <div class="name-category"><h5>Jackets</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Hoodies & Sweatshirts</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>Trousers & Chinos</h5></div>
+                </a>
+                <a href="">
+                  <div class="name-category"><h5>T-shirt</h5></div>
+                </a>
+              </div>
+              <div>
+                <div class="title-subcategory"><h5>formal</h5></div>
+                <a href="">
+                  <div class="name-category"><h5>Jackets</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Shirt</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Skirts</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Dresses</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Trousers</h5></div></a
+                >
+              </div>
+              <div>
+                <div class="title-subcategory"><h5>Sportswear</h5></div>
+                <a href="">
+                  <div class="name-category"><h5>Shoes</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Underwear</h5></div></a
+                >
+                <a href="">
+                  <div class="name-category"><h5>Leggings</h5></div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="category-the-brand">
+            <h5>THE BRAND</h5>
+          </div>
+          <div class="category-local-stores">
+            <h5>local stores</h5>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="category-look-book">
+            <h5>look book</h5>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+        </div>
+        <div class="input-search">
+          <input type="search" name="" id="" placeholder="Search" />
+        </div>
+        <div class="abbr-text">
+          <h1>A</h1>
+          <h1>V</h1>
+          <h1>E</h1>
+        </div>
+
+        <div class="left-menu">
+          <img src="img/men-white-t-shirt.png" alt="Men dressed in white T-shirt" />
+        </div>
+      </div>
+
+      <div class="nav"></div>
+      <div class="search"></div>
+    </header>
+    <div class="items"></div>
+    <div class="lookbook"></div>
+    <footer></footer>
+  </body>
+</html>
